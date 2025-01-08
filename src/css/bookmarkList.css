@@ -1,0 +1,38 @@
+#bookmarkListContainer {
+  background-color: #111;
+}
+
+#bookmarkList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bookmarkItem {
+  display: flex;
+  align-items: stretch;
+  font-size: 16px;
+  font-weight: normal;
+  margin-left: 5px;
+  padding: 2px;
+  gap: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bookmarkItemIcons {
+  display: flex;
+  gap: 8px;
+}
+
+.bookmarkItemDotMenu:hover {
+  background-color: #555;
+}
+
+.bookmarkItem img {
+  size: 16px;
+}
+
+.bookmarkItem:hover {
+  background-color: #333;
+}
