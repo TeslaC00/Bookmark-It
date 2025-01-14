@@ -10,9 +10,9 @@
         "sidePanel"
     ],
     "background": {
-        "service_worker": "./src/sw.ts"
+        "service_worker": "src/sw.ts"
     },
     "side_panel": {
-        "default_path": "./index.html"
+        "default_path": "index.html"
     }
 }
