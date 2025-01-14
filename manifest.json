@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Bookmark-It",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "A Chrome and Brave extension that keeps bookmarks cross browser in sync",
     "action": {
         "default_title": "Click to open panel"
