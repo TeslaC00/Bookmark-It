@@ -20,6 +20,10 @@
   text-overflow: ellipsis;
 }
 
+.bookmarkItem:hover {
+  cursor: pointer;
+}
+
 .bookmarkItemIcons {
   display: flex;
   gap: 8px;

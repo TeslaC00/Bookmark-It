@@ -2,11 +2,6 @@ import "../css/bookmarkList.css";
 import React, { useState } from "react";
 import { DotItemMenu } from "./DotBookmarkMenu";
 
-function openLinkInNewTab() {
-  // TODO: open the link in bookmark in new tab
-  console.log("Function Called: openLinkInNewTab");
-}
-
 function getFaviconURL(): string {
   // TODO: get the favicon URL from the bookmark URL
   // https://developer.chrome.com/docs/extensions/how-to/ui/favicons
@@ -28,6 +23,14 @@ export function BookmarkItemCard(props: IBookmarkItemCardProps) {
     e.stopPropagation();
     setIsMenuOpen((prev) => !prev);
   };
+
+  function openLinkInNewTab() {
+    console.log(`Function Called: openLinkInNewTab with URL:${props.url}`);
+    chrome.runtime.sendMessage({
+      action: "openTab",
+      url: props.url,
+    });
+  }
 
   return (
     <li className="bookmarkItem" onClick={openLinkInNewTab}>
